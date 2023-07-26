@@ -53,7 +53,7 @@ class GroupListWidget extends StatelessWidget {
                 height: 60.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Theme.of(context).colorScheme.primary,
+                  color: Theme.of(context).colorScheme.secondary,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

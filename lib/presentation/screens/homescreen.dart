@@ -24,12 +24,20 @@ class HomeScreen extends StatelessWidget {
 
           if (state is CountryInitialState) {
             return Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  BlocProvider.of<CountryBloc>(context).add(LoadCountryEvent());
-                },
-                child: const Text('Get the Countries',
-                    style: TextStyle(fontSize: 18)),
+              child: SizedBox(
+                width: 200.0,
+                height: 100.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    BlocProvider.of<CountryBloc>(context).add(LoadCountryEvent());
+                  },
+                  child: const Text(
+                      'Get the Countries',
+                      style: TextStyle(
+                          fontSize: 18
+                      )
+                  ),
+                ),
               ),
             );
           }
