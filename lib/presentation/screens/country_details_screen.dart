@@ -28,7 +28,10 @@ class CountryScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.network(countryModel.flagPng),
+            Hero(
+              tag: countryModel.nameCommon,
+                child: Image.network(countryModel.flagPng)
+            ),
             const SizedBox(height: 10.0),
             Container(
               padding: const EdgeInsets.all(8),
